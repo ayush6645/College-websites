@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="try1.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>ABC COLLEGE</title>
+   <link rel="stylesheet" type="text/css" href="Style.css" />
+ 
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+     <asp:Label ID="Label1" runat="server" Text="Your Text Here"></asp:Label>
+
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+        <div id="header">
+            <div id="logo">
+                <a href="home.aspx"><img src="IMAGES\HOME\college_logo-removebg-preview.png" alt="College Logo" /></a>
+            </div>
+           
+            <a href="home.aspx"><h1>ABC COLLEGE</h1></a>
+            <div id="navigation" class="navigation">
+                 
+      
+                <a href="event.aspx">EVENTS</a>
+                <a href="time_table.aspx">TIME TABLE</a>
+                <a href="login.aspx" id="loginLink">LOGIN</a>
+<a href="#" onclick="logout()">LOGOUT</a> <!-- Changed href to "#" and added onclick event -->
+                <a href="upload_certificate.aspx">COURSE CERTIFICATE</a>
+                
+<script>
+    function logout() {
+        if (confirm("Are you sure you want to logout?")) { // Confirmation dialog
+            window.location.href = "logout.aspx"; // Redirect to logout page
+        }
+    }
+</script>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <img src="IMAGES\HOME\menu-removebg-preview.png" alt="Menu Icon" class="menu-icon" onclick="toggleMenu()">
+            <ul class="menu-list" id="menuList">
+                <li><a href="gallery.aspx">Gallary</a></li>
+                <li><a href="library.aspx">Library</a></li>
+                <li><a href="about_us.aspx">About Us</a></li>
+                <li><a href="contact_us.aspx">Contact us & Support</a></li>
+            </ul>
+        </div>
+
+        <asp:ContentPlaceHolder ID="contentt" runat="server"></asp:ContentPlaceHolder>
+
+        <div id="footer">
+            <div class="footer-content">
+                <div id="below-header"> <!-- Merged below-header content -->
+                    <p>410206, Sector 15, New Panvel East, Panvel, Navi Mumbai,</p>
+
+                    <p>Maharashtra 410206</p><br />
+                </div>
+                <div class="footer-section about">
+                    <h2>About Us</h2>
+                    <p>ABC College is dedicated to providing high-quality education...</p>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <p>Phone:+91 912342424 Tel: 044 244 548 <br />Whatsapp: +91 7843993477</p>
+                </div>
+                <br /><br /><br />
+            </div>
+            <div class="footer-bottom">
+                 <div class="footer-section horizontal-links">
+
+             <a href="https://instagram.com/pillaiscollege?igshid=MzRlODBiNWFlZA==">
+             <img src="IMAGES\FOOTER_SOCIAl\instagram.png" alt="Instagram Icon">
+             Instagram
+             </a>
+             <a href="https://m.facebook.com/groups/131223096908194/">
+             <img src="IMAGES\FOOTER_SOCIAl\facebook.png" alt="Facebook Icon">
+             Facebook
+             </a>
+             <a href="https://www.linkedin.com/school/pcacs/">
+             <img src="IMAGES\FOOTER_SOCIAl\linkedin.png" alt="Linkedin Icon">
+             Linkedin
+             </a>
+             <a href="mailto:pcacs@mes.ac.in ">
+             <img src="IMAGES\FOOTER_SOCIAl\gmail.png" alt="Gmail Icon">
+             Gamil
+             </a>
+ </div>
+                <p>&copy; 2023 ABC College. All rights reserved. | Designed by Gyan Gupta TY.IT</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

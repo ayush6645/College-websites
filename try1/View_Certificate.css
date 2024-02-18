@@ -1,0 +1,31 @@
+﻿.custom-gridview {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+    .custom-gridview th {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .custom-gridview tr {
+        background-color: #f2f2f2;
+    }
+
+        .custom-gridview tr:hover {
+            background-color: #ddd;
+        }
+
+    .custom-gridview td {
+        padding: 10px;
+    }
+
+    .custom-gridview .pager {
+        text-align: center;
+    }

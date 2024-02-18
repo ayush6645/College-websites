@@ -1,0 +1,106 @@
+﻿.submit-button-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+    .submit-button-container button {
+        padding: 10px 20px;
+        background-color: #007bff; /* Blue color, adjust as needed */
+        color: #fff; /* Text color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .submit-button-container button:hover {
+            background-color: #0056b3; /* Darker shade of blue on hover, adjust as needed */
+        }
+
+
+/* Style the headings */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Change to your preferred color */
+}
+
+/* Style the buttons */
+#B1,B2{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff; /* Change to your preferred color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Align the buttons at the bottom center */
+#B1,B2 {
+    position: relative;
+    bottom: 20px; /* Adjust the value to your preference */
+}
+
+/* Style dropdown lists */
+select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Style table headings */
+table th {
+    background-color: #9D88B2; /* Change to your preferred color */
+    color: #fff;
+    text-align: center;
+}
+
+/* Style table cells */
+table td {
+    
+    text-align: center;
+    padding: 5px;
+}
+
+/* Add additional styles for your other elements as needed */
+
+/* Style the branch dropdown */
+#BranchDropdown {
+    background-color: #DBF2FB;
+    width: 100px;
+}
+select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc; /* You can adjust the border styles as needed */
+    color: #000; /* Set the text color */
+}
+
+/* Style the room dropdowns */
+#RoomDropdown,
+#DropDownList1,
+#DropDownList2,
+#DropDownList3,
+#DropDownList4,
+#DropDownList5 {
+    width: 60px;
+}
+
+/* Add more specific styles for individual dropdowns as needed */
+
+/* Style the whole page background */
+body {
+    background-color: #FCF8FF; /* Change to your preferred color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the outer container, if necessary */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
